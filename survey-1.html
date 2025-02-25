@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=">
+    <script>
+        var controlLink = "https://bostonu.qualtrics.com/jfe/form/SV_8CX1g2LHwJQJZIy";
+        var treatmentLink = "https://bostonu.qualtrics.com/jfe/form/SV_3JBgAVZk9NKfkYm";
+        var redirectUrl = Math.random() < 0.5 ? controlLink : treatmentLink;
+        window.location.href = redirectUrl;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a id="manualLink" href="#">click here</a>.</p>
+    <script>
+        document.getElementById("manualLink").href = redirectUrl;
+    </script>
+</body>
+</html>
